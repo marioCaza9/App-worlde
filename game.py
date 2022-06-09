@@ -18,3 +18,9 @@ while True:
         print("Suerte para la proxima!")
         print(f"La palabra era: {word}")
         break
+    j = 0
+    guess = input("Ingrese una palabra de 5 caracteres: ")
+    if guess == word:
+        print('🟩🟩🟩🟩🟩')
+        print('Ganaste!!!')
+        break
