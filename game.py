@@ -24,3 +24,18 @@ while True:
         print('🟩🟩🟩🟩🟩')
         print('Ganaste!!!')
         break
+    elif len(guess) == 5:
+        grid = {i: '⬛' for i in range(5)}
+        count = {i: 0 for i in set(guess)}
+        for i in guess:
+            count[i] += 1
+            if i == word[j]:
+                grid[j] = '🟩'
+            elif i in word and word.count(i) >= count[i]:
+                grid[j] = '🟨'
+            j += 1
+        print("".join(grid.values()))
+        total_chances_left -= 1
+    else:
+         print("Ingrese una palabra válida de 5 letras o que no lleve numeros.")
+    print(f"Total de intentos: {total_chances_left}")
