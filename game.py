@@ -1,6 +1,7 @@
 import os
 import random
 from urllib import request
+import time 
 
 if not os.path.isfile('sgb-words.txt'):
     request.urlretrieve(
@@ -39,3 +40,13 @@ while True:
     else:
          print("Ingrese una palabra válida de 5 letras o que no lleve numeros.")
     print(f"Total de intentos: {total_chances_left}")
+
+
+
+
+
+
+
+
+
+
