@@ -29,6 +29,8 @@ while True:
         elapsed_time_minutes = elapsed_time_int * 1000
 
         print(starting_point /1000)
+        if starting_point == 5:
+                print("Bien")
         break
     elif len(guess) == 5:
         grid = {i: '⬛' for i in range(5)}
