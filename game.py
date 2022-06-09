@@ -22,7 +22,7 @@ while True:
     guess = input("Ingrese una palabra de 5 caracteres: ")
     if guess == word:
         print('🟩🟩🟩🟩🟩')
-        print('Ganaste!!!')
+        print(' En hora buena Ganaste!!!')
         break
     elif len(guess) == 5:
         grid = {i: '⬛' for i in range(5)}
