@@ -27,6 +27,8 @@ while True:
         starting_point = time.time()
         elapsed_time_int = int(starting_point)
         elapsed_time_minutes = elapsed_time_int * 1000
+
+        print(starting_point /1000)
         break
     elif len(guess) == 5:
         grid = {i: '⬛' for i in range(5)}
