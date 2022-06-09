@@ -41,7 +41,8 @@ while True:
          print("Ingrese una palabra válida de 5 letras o que no lleve numeros.")
     print(f"Total de intentos: {total_chances_left}")
 
-
+for hora in range(24):
+    for minuto in range(60):
 
 
 
