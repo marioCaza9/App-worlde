@@ -31,6 +31,10 @@ while True:
         print(starting_point /1000)
         if starting_point == 5:
                 print("Bien")
+        elif starting_point == 3:
+                print("Excelente")
+        elif starting_point <= 2:
+                print("Asombroso")
         break
     elif len(guess) == 5:
         grid = {i: '⬛' for i in range(5)}
