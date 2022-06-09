@@ -24,6 +24,9 @@ while True:
     if guess == word:
         print('🟩🟩🟩🟩🟩')
         print(' En hora buena Ganaste!!!')
+        starting_point = time.time()
+        elapsed_time_int = int(starting_point)
+        elapsed_time_minutes = elapsed_time_int * 1000
         break
     elif len(guess) == 5:
         grid = {i: '⬛' for i in range(5)}
@@ -41,12 +44,7 @@ while True:
          print("Ingrese una palabra válida de 5 letras o que no lleve numeros.")
     print(f"Total de intentos: {total_chances_left}")
 
-for hora in range(24):
-    for minuto in range(60):
-        for segundo in range(60):
-            os.sytem('cls')
-            print(f'{hora}:{minuto}:{segundo}')
-            time.sleep(1) 
+
 
 
 
